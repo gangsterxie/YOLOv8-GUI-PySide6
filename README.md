@@ -1,7 +1,7 @@
 # YOLOv8-Pyside6-GUI `V2.4` a GUI for Ultralytics
 ---
   <p align="center"> 
-  English &nbsp; | &nbsp; <a href="https://github.com/NKUST-LEE-LAB/YOLOv8-Pyside6-GUI/blob/main/README_zh_tw.md">繁體中文</a>
+  English &nbsp; | &nbsp; <a href="https://github.com/SuPoTing/YOLOv8-GUI-PySide6/blob/main/README_zh_tw.md">繁體中文</a>
  </p>
 
 
