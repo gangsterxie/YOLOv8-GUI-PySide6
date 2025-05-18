@@ -803,7 +803,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     self.fps_label.setText('--')
 
         def handle_page_1():
-            if msg == '檢測終止':
+            if msg == '歡迎使用YOLOv8檢測系統，請選擇Mode':
                 if self.yolo_thread.isRunning():
                     self.yolo_thread.quit()
                     
