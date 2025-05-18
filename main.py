@@ -685,13 +685,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.show_status('NOTE：Webcam結果不會保存')
             
             # 將 YOLO 實例的保存結果的標誌設置為 False
-            self.yolo_thread_cam.save_res = False
+            self.yolo_predict_cam.save_res_cam = False
         elif self.save_res_button_cam.checkState() == Qt.CheckState.Checked:
             # 顯示消息，提示運行圖片結果將會保存
             self.show_status('NOTE：Webcam結果將會保存')
             
             # 將 YOLO 實例的保存結果的標誌設置為 True
-            self.yolo_thread_cam.save_res = True
+            self.yolo_predict_cam.save_res_cam = True
 
     # 保存測試結果按鈕 -- 標籤（txt）
     def cam_is_save_txt(self):
@@ -700,13 +700,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.show_status('NOTE：Label結果不會保存')
             
             # 將 YOLO 實例的保存標籤的標誌設置為 False
-            self.yolo_thread_cam.save_txt_cam = False
+            self.yolo_predict_cam.save_txt_cam = False
         elif self.save_txt_button_cam.checkState() == Qt.CheckState.Checked:
             # 顯示消息，提示標籤結果將會保存
             self.show_status('NOTE：Label結果將會保存')
             
             # 將 YOLO 實例的保存標籤的標誌設置為 True
-            self.yolo_thread_cam.save_txt_cam = True
+            self.yolo_predict_cam.save_txt_cam = True
 
     # cam終止按鈕及相關狀態處理
     def cam_stop(self):
