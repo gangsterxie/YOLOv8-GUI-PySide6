@@ -24,6 +24,7 @@ pip install pytube
 pip install ultralytics==8.3.90
 pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 ```
+更改其他 pytorch 版本  [![Pytorch](https://img.shields.io/badge/PYtorch-test?style=flat&logo=pytorch&logoColor=white&color=orange)](https://pytorch.org/)
 
 ### 3. 執行程式
 - 繁體中文
@@ -57,6 +58,7 @@ pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https
 pip install lapx
 pip install auto-py-to-exe
 ```
+更改其他 pytorch 版本  [![Pytorch](https://img.shields.io/badge/PYtorch-test?style=flat&logo=pytorch&logoColor=white&color=orange)](https://pytorch.org/)
 
 ### 3. 啟動auto-py-to-exe UI介面
 
