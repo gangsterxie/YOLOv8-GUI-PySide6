@@ -92,7 +92,7 @@ auto-py-to-exe
 - 軟體還存在一些bug，我會在時間允許的情況下繼續優化並添加一些更有趣的功能。
 - 如果您有儲存檢測結果，它們將保存在`./run`路徑中。
 - UI設計檔為`home.ui`，如果修改，需要使用`pyside6-uic home.ui > ui/home.py`指令重新產生`.py`檔案。
-- 資源檔案為`resources.qrc`，如果修改預設icon，需要使用`pyside6-rcc resoures.qrc > ui/resources_rc.py`指令重新產生`.py`檔案。
+- 資源檔案為`resources.qrc`，如果修改預設icon，需要使用`pyside6-rcc resources.qrc > ui/resources_rc.py`指令重新產生`.py`檔案。
 - 旋轉框模式在`Detect mode`，如果要使用自己訓練的obb模型，需要在檔名中加`obb`，如`yolov8n-obb.pt`，未加obb只會進入一般偵測模式。
 
 ## 現有功能
