@@ -924,7 +924,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             for key, (button, instance, attr) in ui_elements.items():
                 button.setCheckState(Qt.Checked if config[key] else Qt.Unchecked)
                 setattr(instance, attr, config[key] != 0)
-
+            self.is_save_res()
+            self.is_save_txt()
+            self.cam_is_save_res()
+            self.cam_is_save_txt()
             self.run_button.setChecked(False)
             self.run_button_cam.setChecked(False)
         
