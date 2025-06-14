@@ -177,6 +177,7 @@ class YoloPredictor(BasePredictor, QObject):
                 if self.stop_dtc:
                     self.release_video_writers()  # 釋放視頻寫入器
                     self.yolo2main_status_msg.emit('檢測終止')  # Emit stop status
+                    self.dataset.close()
                     break
 
                 if self.args.verbose and self.seen:
