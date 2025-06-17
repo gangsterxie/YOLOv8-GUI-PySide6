@@ -161,6 +161,7 @@ class YoloPredictor(BasePredictor, QObject):
                     if self.stop_dtc:
                         self.release_video_writers()  # Release video writers
                         self.yolo2main_status_msg.emit('Detection Terminated')  # Emit stop status
+                        self.dataset.close()
                         break
 
                     if self.args.verbose and self.seen:
